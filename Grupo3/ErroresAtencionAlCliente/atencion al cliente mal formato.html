@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.renfe.com/" />
+<title>atencion al cliente</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">atencion al cliente</td></tr>
+</thead><tbody>
+
+<tr>
+	<td>open</td>
+	<td>/empresa/atencion_cliente/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Nombre</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Primer_Apellido</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Segundo_Apellido</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Correo_Electronico</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Telefono</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Tipo_Peticion</td>
+	<td>label=SUGERENCIA</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Departamento</td>
+	<td>label=MEDIA DISTANCIA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Comentarios</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=Enviar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Se remitirá su petición a MEDIA DISTANCIA.<br /><br />¿Está usted seguro?</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
